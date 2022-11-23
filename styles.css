@@ -1,4 +1,9 @@
-    body {
+    
+body {
+ background: #000;   
+}
+
+nav-var {
     --animate-duration: 1s;
     --animate-delay: 1s;
     --animate-repeat: 1;
