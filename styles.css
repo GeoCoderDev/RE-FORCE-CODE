@@ -87,12 +87,14 @@ span{
 }
 
 @media screen and (min-width:800px){
-  .final-sms h2{
-    top: -100px;
-    text-align: center;
-    font-size: 100px;
-    color: #fff;
-}
+    
+  .final-sms{
+    background-image: url('Assets/Imagenes/year.jpg');
+   }   
+      
+  .final-sms h2 {
+    display: none;
+   }
 }
 
 
