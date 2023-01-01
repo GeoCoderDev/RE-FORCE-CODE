@@ -73,7 +73,7 @@ span{
     transform: translateY(-100%);
     transition: ease-in-out 0.5s;
     background-color: #333;
-    background-image: url('./Assets/Imagenes/newyear.jpg');
+    background-image: url('Assets/Imagenes/newyear.jpg');
     background-size: cover;
     background-attachment: fixed;
 }
