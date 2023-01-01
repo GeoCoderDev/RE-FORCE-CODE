@@ -79,7 +79,7 @@ span{
 }
 
 .final-sms h2{
-    top: -50px;
+    top: -10px;
     position: relative;
     text-align: center;
     font-size: 50px;
@@ -88,7 +88,7 @@ span{
 
 @media screen and (min-width:800px){
   .final-sms h2{
-    top: -150px;
+    top: -100px;
     text-align: center;
     font-size: 100px;
     color: #fff;
