@@ -86,7 +86,7 @@ span{
     color: #fff;
 }
 
-@media screen and (min-width:800px){
+@media screen and (min-width:1000px){
     
   .final-sms{
     background-image: url('Assets/Imagenes/year.jpg');
@@ -95,6 +95,29 @@ span{
   .final-sms h2 {
     display: none;
    }
+}
+
+@media screen and (min-width:800px){
+    
+  .final-sms{
+    background-image: url('Assets/Imagenes/year.jpg');
+    background-size: contain;
+    background-position: center;
+   }   
+      
+  .final-sms h2 {
+    display: none;
+   }
+}
+
+@media screen and (min-width:500px){
+    
+  .final-sms{
+    background-image: url('Assets/Imagenes/year.jpg');
+    background-size: contain;
+    background-blend-mode: color;
+   }   
+     
 }
 
 
