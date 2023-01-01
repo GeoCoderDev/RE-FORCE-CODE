@@ -2,6 +2,12 @@
 
 /* html */
 
+@mixin breakpoint ($breakpoint) {
+    @media screen and (min-width: $reakpoint) {
+        @content;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,9 +16,32 @@
 
 /* Body */
 body {
-    font-family: 'Ubuntu', sans-serif;
-    background: rgba(0, 0, 0, 0.984);
+    font-family: montseratt, sans-serif; 
 }
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+    &:after {
+    }
+    
+    .content {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+
+
 
 
 /* main */
