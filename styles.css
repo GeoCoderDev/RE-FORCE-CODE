@@ -90,6 +90,8 @@ span{
     
   .final-sms{
     background-image: url('Assets/Imagenes/year.jpg');
+    background: no-repeat;
+    
    }   
       
   .final-sms h2 {
