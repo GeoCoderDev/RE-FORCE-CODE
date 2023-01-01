@@ -2,11 +2,7 @@
 
 /* html */
 
-@mixin breakpoint ($breakpoint) {
-    @media screen and (min-width: $reakpoint) {
-        @content;
-    }
-}
+
 
 * {
     margin: 0;
@@ -17,35 +13,89 @@
 /* Body */
 body {
     font-family: montseratt, sans-serif; 
+    overflow: hidden;
 }
 
-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.container{
+    width: 100%;
     min-height: 100vh;
-    background-image: url('./assets/imagenes/newyear.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #333;
+}
+.countdown{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    flex-wrap: wrap;
+}
+.countdown div{
+    display: grid;
+    place-items: center;
+    padding: 10px;
+}
+h1{
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    padding: 30px 10px;
+}
+p{
+    display: grid;
+    place-items: center;
+    border: solid 1px #fff;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #ff748c;
+}
+span{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    color: #74ffe7;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.final-sms{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(-100%);
+    transition: ease-in-out 0.5s;
+    background-color: #333;
+    background-image: url('newyear.jpg');
     background-size: cover;
-    background-position: center;
-    position: relative;
-    
-    &:after {
-    }
-    
-    .content {
-        position: relative;
-        z-index: 1;
-    }
+    background-attachment: fixed;
 }
 
+.final-sms h2{
+    top: -80px;
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+}
 
-
+@media screen and (min-width:800px){
+  .final-sms h2{
+    top: -200px;
+    text-align: center;
+    font-size: 100px;
+    color: #fff;
+}
+}
 
 
 /* main */
 
 /* Footer */
-
-
