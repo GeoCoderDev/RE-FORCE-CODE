@@ -1,23 +1,34 @@
-let launchDate = new Date("Jan 28, 2023 12:00:00").getTime();
+const $days = document.getElementById('days'),
+$hours = document.getElementById('hours'),
+$minutes = document.getElementById('minutes'),
+$seconds = document.getElementById('seconds'),
+$finalMessage = document.querySelector('.final-sms');
 
-let timer = setInterval(tick, 1000);
+//Fecha a futuro
+const countdownDate = new Date('01 01, 2023 00:01:00').getTime();
 
-function tick () {
-  let now = new Date().getTime();
-  let t = launchDate - now;
+let interval = setInterval(function(){
+    //Obtener fecha actual y milisegundos
+    const now = new Date().getTime();
 
-  if (t > 0) {
-     let days = Math.floor(t / (1000 * 60 * 69 * 24));
-     if (days < 10) { days = "0" + days; }
-     let hours = Math. floor((t % (1000 + 60 * 60 * 24)) / (1000 * 60 * 60));
-     if (hours < 10) { hours = "0" + hours; }
-    
-     let mins = Math. floor((t % (1000 + 60 * 60 )) / (1000 * 60 ));
-     if (mins < 10) { mins = "0" + mins; }
-    
-     let secs = Math. floor((t % (1000 + 60 )) / 1000 );
-     if (secs < 10) { secs = "0" + secs; }
-     let time = ´${days} : ${hours} : ${mins} : ${secs}´;
-     document.queryselector('.countdown'}.innertext = time;
-  }
-}
+    //Obtener las distancias entre ambas fechas
+    let distance = countdownDate - now;
+
+    //Calculos a dias-horas-minutos-segundos
+    let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((distance % (1000 * 60 * 60 * 24 )) / (1000 * 60 * 60));
+    let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((distance % (1000 * 60 )) / (1000));
+
+    //Escribimos resultados
+    $days.innerHTML = days;
+    $hours.innerHTML = hours;
+    $minutes.innerHTML = minutes;
+    $seconds.innerHTML = ('0' + seconds).slice(-2);
+
+    //Cuando llegue a 0
+    if(distance < 0){
+        clearInterval(interval);
+        $finalMessage.style.transform = 'translateY(0)';
+    }
+}, 1000);
