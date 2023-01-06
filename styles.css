@@ -54,7 +54,7 @@ p{
     font-weight: bold;
     background-color: #ff748c;
 }
-span{
+.fecha {
     display: block;
     padding: 10px;
     text-align: center;
@@ -85,6 +85,13 @@ span{
     font-size: 50px;
     color: #fff;
 }
+
+.contn-movil {
+    display: none;
+}
+
+
+/* *Responsive */
 
 @media screen and (min-width:1000px){
     
@@ -122,6 +129,52 @@ span{
      
 }
 
+@media screen and (max-width:500px){
+    .contn-movil {
+        visibility: visible;
+        z-index: 20;
+        width: 100%;
+        height: 60px;
+        background: #000;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        bottom: 60px;
+    }
+    
+    .mv a {
+        display: flex;
+        background: transparent;
+        opacity: 0.2;
+        cursor: pointer;
+        text-decoration: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+    .mv .text{
+        color: rgb(174, 252, 5);
+        font-size: 1rem;
+        text-align: center;
+        color: #74ffe7;
+    }
+    
+    .icon {
+        color: rgb(174, 252, 5);
+        position: relative;
+    }
+
+    .mv:hover {
+        border: 2px solid #6eff3e;
+    }
+    
+}
 
 /* main */
 
