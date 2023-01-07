@@ -272,7 +272,7 @@ iframe {
     }
 
     .mv.active .icon {
-        height: 28px;
+        height: 25px;
         font-size: 1.8rem;
     }
     
@@ -282,7 +282,6 @@ iframe {
         transform: scale(1);
         visibility: visible;
         display: flex;
-        bottom: 5px;
         position: relative;
     }
     
@@ -347,7 +346,7 @@ iframe {
     .mv .icon {
         color: #fff;
         font-size: 3rem;
-        height: 42px;
+        height: 50px;
     }
 
     /* responsive chatbt*/
@@ -386,6 +385,10 @@ iframe {
         width: 250px;
         height: 350px;
         right: 100px;
+    }
+
+    footer {
+        display: none;
     }
     
 }
