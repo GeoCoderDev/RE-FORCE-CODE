@@ -283,12 +283,12 @@ iframe {
 
     .mv .text{
         text-align: center;
-        color: #74ffe7;
+        color: #fff;
         zoom: 0.8;
     }
     
     .icon {
-        color: rgb(174, 252, 5);
+        color: #fff;
         position: relative;
         font-size: 1.8rem;
     }
