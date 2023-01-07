@@ -41,7 +41,7 @@
         </section>
         <section class="final-sms"><h2>✨¡FELIZ AÑO NUEVO✨¡ </h2></section>
         <section class="contn-movil">
-                <div class="mv">
+                <div class="mv active">
                     <a href="#">
                         <span class="icon"><ion-icon 
                             name="game-controller-outline"></ion-icon>
@@ -49,7 +49,7 @@
                         <span class="text">Games</span>
                     </a>
                 </div>
-                <div class="mv">
+                <div class="mv active">
                     <a href="#">
                         <span class="icon"><ion-icon 
                             name="chatbubbles-outline"></ion-icon>
@@ -57,7 +57,7 @@
                         <span class="text">Comunity</span>
                     </a>
                 </div>
-                <div class="mv">
+                <div class="mv active">
                     <a href="#">
                         <span class="icon"><ion-icon 
                             name="compass-outline"></ion-icon>
@@ -65,7 +65,7 @@
                         <span class="text">Descubrir</span>
                     </a>
                 </div>
-                <div class="mv">
+                <div class="mv active">
                     <a href="#">
                         <span class="icon"><ion-icon 
                             name="aperture-outline"></ion-icon>
@@ -73,7 +73,7 @@
                         <span class="text">Blog</span>
                     </a>
                 </div>
-                <div class="mv">
+                <div class="mv active">
                     <a href="#">
                         <span class="icon"><ion-icon 
                             name="person-circle-outline"></ion-icon>
@@ -100,6 +100,19 @@
 		</iframe>
 		</nav>
     	</div>
+
+    <!-- menu mv-->
+    <script>
+        let mv = document.querySelectorAll('.mv');
+        function setActiveClass(){
+            mv.forEach((item) => 
+            item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        mv.forEach((item) => 
+        item.addEventListener('mouseover' , setActiveClass))
+    </script>
+
     <!-- Scripts-->
     <script src="main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
