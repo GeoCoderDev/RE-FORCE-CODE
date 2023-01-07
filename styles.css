@@ -147,11 +147,11 @@ p{
 	display: flex;
 	z-index: 3;
 	background: #2b313f;
-	   width: 300px;
+	width: 300px;
 	height: 83px;
 	border-radius: 4px 4px 0px 0px;
 	flex-direction: row;
-    	align-items: center;
+    align-items: center;
 	justify-content: space-evenly;
 }
 
@@ -251,9 +251,6 @@ iframe {
 
 @media screen and (max-width:500px){
 
-    .container h1 {
-        font-size: 1.5rem;
-    }
 
     .contn-movil {
         visibility: visible;
@@ -284,19 +281,34 @@ iframe {
     }
     
 
-    .mv, .text{
-        font-size: 1rem;
+    .mv .text{
         text-align: center;
         color: #74ffe7;
+        zoom: 0.8;
     }
     
     .icon {
         color: rgb(174, 252, 5);
         position: relative;
+        font-size: 1.8rem;
     }
 
     .mv:hover {
         border: 2px solid #6eff3e;
+    }
+
+    .container1 {
+        bottom: 100px;
+        right: 50px;
+    }
+
+    #toggle:checked ~ .nav1 {
+        transform: translateY(20%);
+    }
+
+    .container h1 {
+        font-size: 1.5rem;
+        right: 100px;
     }
 
     .nav1 {
@@ -307,15 +319,18 @@ iframe {
     .Titlebot {
         width: 250px;
         justify-content: center;
+        right: 100px;
     }
 
     .ctbt {
         width: 250px;
+        right: 100px;
     }
 
     iframe {
         width: 250px;
         height: 350px;
+        right: 100px;
     }
     
 }
