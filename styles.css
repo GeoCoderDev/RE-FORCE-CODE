@@ -13,7 +13,6 @@
 /* Body */
 body {
     font-family: montseratt, sans-serif; 
-    overflow: hidden;
 }
 
 .container{
@@ -251,6 +250,11 @@ iframe {
 }
 
 @media screen and (max-width:500px){
+
+    .container h1 {
+        font-size: 1.5rem;
+    }
+
     .contn-movil {
         visibility: visible;
         z-index: 20;
@@ -264,23 +268,23 @@ iframe {
         margin: 0;
         padding: 0;
         position: relative;
-        bottom: 60px;
     }
     
     .mv a {
         display: flex;
         background: transparent;
-        opacity: 0.2;
+        opacity: 0.6;
         cursor: pointer;
         text-decoration: none;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        height: 50px;
+        width: 50px;
     }
     
 
-    .mv .text{
-        color: rgb(174, 252, 5);
+    .mv, .text{
         font-size: 1rem;
         text-align: center;
         color: #74ffe7;
