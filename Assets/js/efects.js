@@ -1,3 +1,9 @@
+// PRELOADER 
+
+$(window).on('load', function(){
+    $('#status').fadeOut();
+    $('#preloader').delay(350).fadeOut();
+});
 
 //Intro o BANNER
 // despliegue de titulo con animacion, requiere conexion con el script baffle.min.js
@@ -52,31 +58,6 @@ function tick() {
         document.querySelector('.rebuild').innerText = time;
     }
 }
-
-    // SLIDER DE CONTENEDOR
-    const swiper = new Swiper('.swiper', {
-        slidesPerview: 1,
-        // Optional parameters
-        direction: 'vertical',
-        loop: true,
-      
-        // If we need pagination
-        pagination: {
-          el: '.swiper-pagination',
-        },
-      
-        // Navigation arrows
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      
-        // And if we need scrollbar
-        scrollbar: {
-          el: '.swiper-scrollbar',
-        },
-      });
-
 
 
 //FOOTER
