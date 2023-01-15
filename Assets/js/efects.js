@@ -1,9 +1,7 @@
 // PRELOADER 
+var elemento = document.getElementById("preloader");
+    elemento.className += "preloaded";
 
-$(window).on('load', function(){
-    $('#status').fadeOut();
-    $('#preloader').delay(350).fadeOut();
-});
 
 //Intro o BANNER
 // despliegue de titulo con animacion, requiere conexion con el script baffle.min.js
@@ -58,16 +56,3 @@ function tick() {
         document.querySelector('.rebuild').innerText = time;
     }
 }
-
-
-//FOOTER
-// menu mobil seleccion menu
-
-let mv = document.querySelectorAll('.mv');
-        function setActiveClass(){
-            mv.forEach((item) => 
-            item.classList.remove('active'));
-            this.classList.add('active');
-        }
-        mv.forEach((item) => 
-        item.addEventListener('mouseover' , setActiveClass))

@@ -11,15 +11,70 @@
 </head>
 <body>
     
-        <!--Precarga pantalla nueva-->
-        <div id="preloader">
-            <div id="status">&nbsp;</div>
-        </div>
+    <!--Precarga pantalla nueva-->
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+
+    <!--Navegacion principal-->
+    <div class="navigation">
+        <div class="menutoggle"></div>
+        <ul>
+            <li class="nav active" style="--clr:#f44336">
+                <a href="#">
+                    <span class="icon"><ion-icon 
+                        name="home-outline"></ion-icon>
+                    </span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+            <li class="nav" style="--clr:#ffa117">
+                <a href="#">
+                    <span class="icon"><ion-icon 
+                        name="person-outline"></ion-icon>
+                    </span>
+                    <span class="text">What can you Learn?</span>
+                </a>
+            </li>
+            <li class="nav" style="--clr:#0fc70f">
+                <a href="#">
+                    <span class="icon"><ion-icon 
+                        name="chatbubble-outline"></ion-icon>
+                    </span>
+                    <span class="text">Puzzles</span>
+                </a>
+            </li>
+            <li class="nav" style="--clr:#b145e9">
+                <a href="#">
+                    <span class="icon"><ion-icon 
+                        name="camera-outline"></ion-icon>
+                    </span>
+                    <span class="text">About us</span>
+                </a>
+            </li>
+            <li class="nav" style="--clr:#2196f3"> 
+                <a href="#">
+                    <span class="icon"><ion-icon 
+                        name="settings-outline"></ion-icon>
+                    </span>
+                    <span class="text">Contact</span>
+                </a>
+            </li>
+            <li class="nav" style="--clr:#5d62fb"> 
+                <a href="#">
+                    <span class="icon"><ion-icon 
+                        name="person-outline"></ion-icon>
+                    </span>
+                    <span class="text">Iniciar sesion</span>
+                </a>
+            </li>
+        </ul>
+    </div>
 
     <!--contenido principal-->
-
-        <!--menu principal-->
-
+    <main>
+        <div class="void"></div>
+        <div class="main">
         <!--Banner creo-->
         <div class="intro">
             <div class="title">RE_FORCE - CODE</div>
@@ -34,7 +89,7 @@
                 <!--slider content-->
             <div class="crack">
                 <div class="surrender">
-                    <div class="lent" >
+                    <div class="lent">
                         <br>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, dolor dicta praesentium aspernatur et,
                             repellendus voluptatum quas eligendi magnam, amet sunt itaque quos quibusdam rem autem qui cupiditate dolorum odit.
@@ -48,6 +103,8 @@
                 </div>
             </div>
         </section>
+        </div>
+    </main>
     <br>
     <!-- footer-->
     <footer>
@@ -107,10 +164,13 @@
         </div>
     </div>
     </footer>
+
     <!--scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!--scripts menu version movil-->
     <script src="./Assets/js/efects.js"></script>
+    <script src="./Assets/js/main.js"></script>
 </body>
 </html>
 
