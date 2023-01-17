@@ -362,11 +362,18 @@ main {
     color: #fff;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-.lent span {
-    display: flex;
-    justify-content: center;
+
+.text-dmc {
+    width: auto;
+    height: 90px;
+    padding: 0 30px;
+}
+
+.texto-dnmc {
+    display: contents;
 }
 
 
@@ -481,6 +488,14 @@ footer {
 
     .lent span {
         justify-content: flex-end;
+    }
+
+    .text-dmc {
+        height: 100px;
+    }
+
+    .texto-dnmc {
+        font-size: 0.8rem;
     }
 
     /* footer*/
