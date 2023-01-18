@@ -24,16 +24,30 @@ const menutoggle = document.querySelector('.menutoggle');
             navigation.classList.toggle('open')
         }
 
-//FOOTER
-// menu mobil seleccion menu
+// Menu content conection
+    var nav = document.getElementsByClassName("nav");
+    var slide = document.getElementById("slide");
 
-let mv = document.querySelectorAll('.mv');
-        function setActiveClass(){
-            mv.forEach((item) => 
-            item.classList.remove('active'));
-            this.classList.add('active');
-        }
-        mv.forEach((item) => 
-        item.addEventListener('mouseover' , setActiveClass))
+    nav[0].onclick = function () {
+        slide.style.transform = "translateX(0px)";
+    }
+    nav[1].onclick = function () {
+        slide.style.transform = "translateX(-668px)";
+    }
+    nav[2].onclick = function () {
+        slide.style.transform = "translateX(-1336px)";
+    }
+    nav[3].onclick = function () {
+        slide.style.transform = "translateX(-2004px)";
+    }
+    nav[4].onclick = function () {
+        slide.style.transform = "translateX(-2672px)";
+    }
+    nav[5].onclick = function () {
+        slide.style.transform = "translateX(-3340px)";
+    }
+
+//FOOTER
+
 
 

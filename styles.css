@@ -131,7 +131,7 @@ body {
 /* Menu de navegación*/
 
 .navigation {
-    
+    z-index: 2;
     position: fixed;
     inset: 20px 0 20px 20px;
     width: 75px;
@@ -296,6 +296,8 @@ main {
     display: flex;
     flex-direction: column;
     padding: 0 0 0 150px;
+    width: 100%;
+    height: 100%;
 }
 
 .void {
@@ -350,12 +352,14 @@ main {
 .crack {
    display: flex;
    align-items: center;
-   padding: 0 20px;
+   width: 668px;
+   height: 100%;
+   overflow: hidden;
 }
 
 .surrender {
-    padding: 0 30px;
     display: flex;
+    transition: 0.5s;
 }
 
 .lent {
@@ -363,6 +367,9 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 668px;
+    position: relative;
+    padding: 0 20px;
 }
 
 
@@ -475,14 +482,13 @@ footer {
     }
 
     .surrender {
-        width: 90%;
         justify-content: center;
         padding: 0;
     }
 
     .lent {
         color: #000;
-        width: 70%;
+        width: 400px;
         flex-direction: column;
     }
 
