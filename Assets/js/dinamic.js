@@ -1,7 +1,7 @@
 // Texto dinamico, efecto de completar frase
 
 const typed = new Typed(".texto-dnmc",{
-    strings: ["Continua tu camino, enfrenta un desafio, inicia un recorrido, plantea un objetivo, emprende un viaje, persigue un sueño... y encontraras una dicha tan grande como el amanecer. - by lynnen.",
+    strings: ["Continua tu camino, enfrenta un desafio, inicia un recorrido, plantea un objetivo, emprende un viaje, persigue un sueño... y encontraras una dicha tan grande como el amanecer.",
     "Las acciones con repercusiones necesitan unificar parte del espacio y tiempo. - Steve Jobs.",
     "La singularidad de las cosas invaden la curiosidad humana asi como el desarrollo de nuevas irregularidades en el tiempo y el espacio. - Yod.",
     "Pero jamas, aunque intenten traer una realidad esta sera sobrescrita o separada de la original - Robin Williams."],
