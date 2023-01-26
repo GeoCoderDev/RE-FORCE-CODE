@@ -1,0 +1,535 @@
+
+/* Responsive */
+
+/* Estilos que aplican hasta un maximo 1000px y por debajo*/
+
+@media screen and (max-width:1000px){
+    .navigation .menutoggle {
+        pointer-events: none;
+    }
+
+    .main {
+        padding: 0;
+    }
+}
+
+/* Estilos que aplican hasta un maximo 800px y por debajo*/
+@media screen and (max-width:800px){
+/* Menu de navegación*/
+
+.navigation .menutoggle {
+    pointer-events: none;
+}
+
+/* Main o contenido principal */
+
+main {
+    display: flex;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 10%;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(90, 85, 41, 0.09);*/
+}
+
+.void {
+    display: flex;
+    width: 130px;
+    height: 100vh;
+}
+
+.intro {
+   display: flex;
+   font-size: 33px;
+   justify-content: center;
+   padding: 30px 0;
+   /* background: rgba(90, 56, 41, 0.09);*/
+}
+
+.title {
+    color: #F86594 ;
+    font-size: 3rem;
+    text-shadow: 0 3px #FFCAA6;
+    font-weight: bold;
+    text-align: center;
+}
+
+.content {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   /* background: rgba(41, 84, 90, 0.09);*/
+}
+
+.contentdefault {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contentdefault h2 {
+    color: #5CB270;
+    text-shadow: #F4F269;
+    font-size: 40px;
+    font-weight: 800;
+    animation: parpadeo 2s linear infinite;
+    transition: .7s ease;
+    text-align: center;
+}
+
+.rebuild {
+    color: #3fff7c;
+    font-size: 2rem;
+    padding: 20px 0;
+    font-weight: bold;
+}
+
+.crack {
+   display: flex;
+   align-items: center;
+   height: 100%;
+   overflow: hidden;
+   /* background: rgba(55, 41, 90, 0.09); */
+}
+
+.surrender {
+    display: flex;
+    transition: 0.5s;
+}
+
+.lent {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1200px;
+    position: relative;
+    padding: 0 4%;
+}
+
+.s-p {
+    padding: 0 20px;
+    display: contents;
+}
+
+.sp-title {
+    padding: 0 10%;
+}
+
+.spdiv {
+    width: 50%; 
+    height: 1px; 
+    background: #5d62fb;
+}
+
+.spdiv-bold {
+    width: 25%; 
+    height: 3px; 
+    background: #5d62fb;
+}
+
+
+.s-p h3 {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.s-p .cntnttxt {
+    display: flex;
+    padding: 50px 0;
+}
+
+.s-p .cntnttxt p {
+    font-size: 5rem;
+}
+
+.s-p .cntnttxt span {
+    padding: 10px 0 0 0;
+}
+
+/* Lineas divisoras por asi decirlo*/
+
+.break {
+    width: 50%; 
+    height: 1px; 
+    background: #5d62fb; 
+    margin: 0 0 0 50%;
+}
+
+.break-b {
+    width: 20%; 
+    height: 5px; 
+    background: #5d62fb; 
+    margin: 0 0 0 80%;
+}
+
+.breakx {
+    width: 50%; 
+    height: 1px; 
+    background: #5d62fb; 
+    margin: 0 45% 0 5%;
+}
+
+.breaky {
+    width: 50%;
+    height: 1px;
+    background: #5d62fb;
+    margin: 0 5% 0 45%;
+}
+
+.breaky-b {
+    width: 20%;
+    height: 5px;
+    background: #5d62fb;
+    margin: 0 5% 0 75%;
+}
+
+.stylep {
+    padding: 20px 20px;
+}
+
+.style-span {
+    padding: 20px 20px;
+}
+
+.text-dmc {
+    padding: 20px 30px;
+    color: #fff;
+}
+
+.texto-dnmc {
+    display: contents;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+.credts {
+    padding: 20px;
+    color: #5d62fb;
+}
+
+
+}
+
+
+
+
+
+
+/* Estilos que aplican hasta un maximo 500px y por debajo*/
+
+@media screen and (max-width:500px){
+
+
+    /* body */
+    body {
+        background: #fff;
+    }
+
+    /* navigation escritorio eliminar */
+
+    .navigation {
+        display: none;
+    }
+
+    .main {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    /* espacio vacio */
+
+    .void {
+        display: none;
+    }
+
+
+        /* Banner */
+    .intro {
+        padding: 0;
+        width: 100%;
+        background: #000;
+        justify-content: center;
+        font-size: 2em;
+    }
+
+    
+    .title {
+        color: #fff;
+        text-shadow: 0 3px 5px #0fc70f;
+        display: block;
+        font-size: 1.17em;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+
+
+        /* contenido*/
+    .content {
+        padding: 10px 20px;
+        flex-direction: column;
+    }
+    
+    .contentdefault {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contentdefault h2 {
+        color: #000;
+        font-size: 40px;
+        font-weight: 800;
+        margin: 30px 0px;
+        animation: parpadeo 2s linear infinite;
+        transition: .7s ease;
+    }
+    
+    .rebuild {
+        color: #000;
+        font-size: 42px;
+    }
+
+        /* slider content*/
+    .crack {
+        width: 100%;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .surrender {
+        justify-content: center;
+        padding: 0;
+    }
+
+
+/* Class lent slider*/
+
+
+    .lent {
+        color: #000;
+        width: 400px;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .s-p {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+        width: 100%;
+    }
+
+    .sp-title {
+        padding: 0;
+    }
+
+    .spdiv {
+        width: 70%;
+    }
+
+    .spdiv-bold {
+        width: 35%;
+    }
+
+    .s-p h3 {
+        padding: 5px 0 10px 0;
+        text-align: start;
+        font-size: 1.6em;
+    }
+
+    .s-p .cntnttxt {
+        padding: 20px 0 20px 20px;
+        display: flex;
+    }
+
+    .s-p .cntnttxt p {
+        font-size: 4rem;
+    }
+
+    .s-p .cntnttxt span {
+        padding: 10px 0 0;
+    }
+
+    .stylep {
+        padding: 20px 40px;
+        font-size: .8rem;
+    }
+
+    .style-span {
+        padding: 20px 40px;
+        font-size: .8rem;
+    }
+
+    .lent span {
+        justify-content: flex-end;
+        padding: 20px 18px;
+    }
+
+    .text-dmc {
+        height: 100px;
+        color: #000;
+    }
+
+    .texto-dnmc {
+        font-size: 0.8rem;
+    }
+
+
+
+    /* footer*/
+
+    footer {
+        width: 100%;
+    }
+
+    .contn-movil {
+        visibility: visible;
+        width: 100%;
+        height: 60px;
+        background: #000;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        position: sticky;
+    }
+
+    .mv {
+        padding: 0;
+        margin: 0;
+    }
+
+    .br {
+        content: '';
+        width: 1px;
+        height: 30px;
+        background: #fff;
+        opacity: .5;
+    }
+
+    .mv.active a {
+        opacity: 1;
+    }
+
+    .mv .icono {
+        height: 30px;
+        width: 30px;
+    }
+
+    .mv.active .icono {
+        font-size: 1.8rem;
+        height: 28px;
+        width: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .mv.active .icono svg {
+        height: 20px;
+        width: 20px;
+    }
+
+    .mv.active .text {
+        zoom: 0.7;
+        transform: scale(1);
+        visibility: visible;
+        display: flex;
+        position: relative;
+    }
+    
+
+    .mv a {
+        display: flex;
+        background: transparent;
+        cursor: pointer;
+        text-decoration: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        width: 50px;
+        opacity: 0.8;
+    }
+    
+
+
+    .mv .text{
+        text-align: center;
+        color: #fff;
+        zoom: 0.8;
+        transition: 0.25s;
+        transform: scale(0);
+        display: none;
+    }
+    
+    .mv .icono svg{
+        font-size: 3rem;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+    }
+    
+}
+
+
+
+
+
+/* Estilos que aplican hasta un maximo 300px y por debajo*/
+
+@media screen and (max-width:300px){
+    
+
+    .contentdefault {
+        width: min-content;
+    }
+
+    .rebuild {
+        font-size: xx-large;
+    }
+
+    .lent span {
+        padding: 20px 80px;
+    }
+
+    .s-p {
+        padding: 0 90px;
+    }
+
+    .s-p .cntnttxt {
+        padding: 20px 0 20px 0px;
+    }
+
+    .stylep {
+        padding: 20px 90px;
+    }
+
+    .style-span {
+        padding: 20px 90px;
+    }
+
+    .text-dmc {
+        padding: 20px 90px;
+    }
+
+    .mv:nth-child(7) {
+        display: none;
+    }
+
+    .br:nth-child(8) {
+        display: none;
+    }
+
+}
