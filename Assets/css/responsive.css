@@ -91,7 +91,6 @@ main {
 .crack {
    display: flex;
    align-items: center;
-   width: 668px;
    height: 100%;
    overflow: hidden;
    /* background: rgba(55, 41, 90, 0.09); */
@@ -107,13 +106,14 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 668px;
+    width: 1200px;
     position: relative;
-    padding: 0 20px;
+    padding: 0 4%;
 }
 
 .s-p {
     padding: 0 20px;
+    display: contents;
 }
 
 .sp-title {
@@ -217,9 +217,14 @@ main {
 }
 
 
+
+
+
+
 /* Estilos que aplican hasta un maximo 500px y por debajo*/
 
 @media screen and (max-width:500px){
+
 
     /* body */
     body {
@@ -305,16 +310,22 @@ main {
         padding: 0;
     }
 
+
+/* Class lent slider*/
+
+
     .lent {
         color: #000;
         width: 400px;
         flex-direction: column;
+        padding: 0;
     }
 
     .s-p {
         display: flex;
         flex-direction: column;
         padding: 0 20px;
+        width: 100%;
     }
 
     .sp-title {
@@ -371,6 +382,8 @@ main {
     .texto-dnmc {
         font-size: 0.8rem;
     }
+
+
 
     /* footer*/
 
@@ -468,4 +481,55 @@ main {
         filter: invert(100%);
     }
     
+}
+
+
+
+
+
+/* Estilos que aplican hasta un maximo 300px y por debajo*/
+
+@media screen and (max-width:300px){
+    
+
+    .contentdefault {
+        width: min-content;
+    }
+
+    .rebuild {
+        font-size: xx-large;
+    }
+
+    .lent span {
+        padding: 20px 80px;
+    }
+
+    .s-p {
+        padding: 0 90px;
+    }
+
+    .s-p .cntnttxt {
+        padding: 20px 0 20px 0px;
+    }
+
+    .stylep {
+        padding: 20px 90px;
+    }
+
+    .style-span {
+        padding: 20px 90px;
+    }
+
+    .text-dmc {
+        padding: 20px 90px;
+    }
+
+    .mv:nth-child(7) {
+        display: none;
+    }
+
+    .br:nth-child(8) {
+        display: none;
+    }
+
 }

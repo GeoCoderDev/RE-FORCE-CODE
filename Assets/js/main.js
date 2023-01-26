@@ -32,19 +32,19 @@ const menutoggle = document.querySelector('.menutoggle');
         slide.style.transform = "translateX(0px)";
     }
     nav[1].onclick = function () {
-        slide.style.transform = "translateX(-668px)";
+        slide.style.transform = "translateX(-1200px)";
     }
     nav[2].onclick = function () {
-        slide.style.transform = "translateX(-1336px)";
+        slide.style.transform = "translateX(-2400px)";
     }
     nav[3].onclick = function () {
-        slide.style.transform = "translateX(-2004px)";
+        slide.style.transform = "translateX(-3600px)";
     }
     nav[4].onclick = function () {
-        slide.style.transform = "translateX(-2672px)";
+        slide.style.transform = "translateX(-4800px)";
     }
     nav[5].onclick = function () {
-        slide.style.transform = "translateX(-3340px)";
+        slide.style.transform = "translateX(-6000px)";
     }
 
 //FOOTER

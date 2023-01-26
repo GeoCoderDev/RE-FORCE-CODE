@@ -1,9 +1,13 @@
 :root {
-    --wdt: 668px;
+    --wdt: 100%;
 }
 
-
-
+@font-face {
+    font-family: 'Alexana';
+    src: url('Assets/Alexana.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
 
 * {
     margin: 0;
@@ -302,8 +306,6 @@ main {
 .main {
     display: flex;
     flex-direction: column;
-    padding: 0 0 0 150px;
-    width: 100%;
     height: 100%;
     /* background: rgba(90, 85, 41, 0.09);*/
 }
@@ -323,11 +325,12 @@ main {
 }
 
 .title {
-    color: #F86594 ;
+    color: rgba(1, 153, 255, 0.558) ;
     font-size: 3rem;
-    text-shadow: 0 3px #FFCAA6;
+    text-shadow: 0 3px #003d9e23;
     font-weight: bold;
     text-align: center;
+    font-family: 'Alexana';
 }
 
 .content {
@@ -335,6 +338,30 @@ main {
    flex-direction: column;
    align-items: center;
    /* background: rgba(41, 84, 90, 0.09);*/
+}
+
+.crack {
+   display: flex;
+   align-items: center;
+   width: 1200px;
+   height: 100%;
+   overflow: hidden;
+   /* background: rgba(55, 41, 90, 0.09); */
+}
+
+.surrender {
+    display: flex;
+    transition: 0.5s;
+}
+
+.lent {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: var(--wdt);
+    position: relative;
+    overflow: hidden;
 }
 
 .contentdefault {
@@ -360,32 +387,8 @@ main {
     font-weight: bold;
 }
 
-.crack {
-   display: flex;
-   align-items: center;
-   width: var(--wdt);
-   height: 100%;
-   overflow: hidden;
-   /* background: rgba(55, 41, 90, 0.09); */
-}
-
-.surrender {
-    display: flex;
-    transition: 0.5s;
-}
-
-.lent {
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: var(--wdt);
-    position: relative;
-    padding: 0 20px;
-}
-
 .s-p {
-    padding: 0 20px;
+    width: 1200px;
 }
 
 .sp-title {
