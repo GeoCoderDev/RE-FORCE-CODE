@@ -3,15 +3,30 @@
 
 /* Estilos que aplican hasta un maximo 1000px y por debajo*/
 
-@media screen and (max-width:1000px){
-    .navigation .menutoggle {
-        pointer-events: none;
-    }
-
+@media screen and (min-width:1000px){
     .main {
         padding: 0;
     }
+
+    .title {
+        background-size: 120%;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-image: url("../Imagenes/year.jpg");
+        animation: bg-animation 30s cubic-bezier(0.3,0,0.7,1);
+    }
 }
+
+/* */
+
+@media screen and (max-width:1000px){      
+    .navigation .menutoggle {
+        pointer-events: none;
+    }
+}
+
 
 /* Estilos que aplican hasta un maximo 800px y por debajo*/
 @media screen and (max-width:800px){
@@ -51,11 +66,13 @@ main {
 }
 
 .title {
-    color: #F86594 ;
-    font-size: 3rem;
-    text-shadow: 0 3px #FFCAA6;
-    font-weight: bold;
-    text-align: center;
+    background-size: 120%;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: url("../Imagenes/year.jpg");
+    animation: bg-animation 30s cubic-bezier(0.3,0,0.7,1);
 }
 
 .content {
@@ -260,8 +277,6 @@ main {
 
     
     .title {
-        color: #fff;
-        text-shadow: 0 3px 5px #0fc70f;
         display: block;
         font-size: 1.17em;
         margin-block-start: 1em;
@@ -271,6 +286,15 @@ main {
         font-weight: bold;
     }
 
+    .contnte {
+        overflow-y: scroll;
+        height: 74vh;
+        padding: 0 20px;
+    }
+
+    .contnte::-webkit-scrollbar {
+        display: none;
+    }
 
         /* contenido*/
     .content {
@@ -344,6 +368,16 @@ main {
         padding: 5px 0 10px 0;
         text-align: start;
         font-size: 1.6em;
+    }
+
+    .introduccion {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .introduccion img {
+        width: 100%;
+        height: 100%;
     }
 
     .s-p .cntnttxt {

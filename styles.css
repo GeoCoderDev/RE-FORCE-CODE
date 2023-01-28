@@ -21,6 +21,10 @@ body {
     background: #000;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 /*
 #preloader {
     background: #010e3a;
@@ -327,11 +331,12 @@ main {
 .title {
     color: rgba(1, 153, 255, 0.558) ;
     font-size: 3rem;
-    text-shadow: 0 3px #003d9e23;
     font-weight: bold;
     text-align: center;
     font-family: 'Alexana';
+    -webkit-text-stroke: 1px #fff;
 }
+
 
 .content {
    display: flex;
@@ -391,6 +396,15 @@ main {
     width: 1200px;
 }
 
+.introduccion {
+    display: flex;
+}
+
+.introduccion img {
+    width: 50%;
+    height: 50%;
+}
+
 .sp-title {
     padding: 0 10%;
 }
@@ -416,7 +430,7 @@ main {
 
 .s-p .cntnttxt {
     display: flex;
-    padding: 50px 0;
+    padding: 50px 100px;
 }
 
 .s-p .cntnttxt p {
@@ -544,6 +558,12 @@ footer {
     }
 }
 
+
+@keyframes bg-animation {
+    0% {background-position: 0% 0%;}
+    50% {background-position: 100% 100%;}
+    100% {background-position: 0% 0%;}
+}
 
 /*
 @-webkit-keyframes animate-preloader  {
