@@ -27,25 +27,16 @@ const menutoggle = document.querySelector('.menutoggle');
 // Menu content conection
     var nav = document.getElementsByClassName("nav");
     var slide = document.getElementById("slide");
+    var anchoPantallaDispositivo = window.innerWidth;
 
-    nav[0].onclick = function () {
-        slide.style.transform = "translateX(0px)";
+    //Bucle para asignar la traslacion de cada boton de la barra de navegacion
+    //Proporcionalmente al ancho de la pantalla del dispositivo
+    for(let i=0; i<nav.length;i++){
+        nav[i].onclick = function () {
+            slide.style.transform = `translateX(-${anchoPantallaDispositivo*i}px)`;
+        }
     }
-    nav[1].onclick = function () {
-        slide.style.transform = "translateX(-1200px)";
-    }
-    nav[2].onclick = function () {
-        slide.style.transform = "translateX(-2400px)";
-    }
-    nav[3].onclick = function () {
-        slide.style.transform = "translateX(-3600px)";
-    }
-    nav[4].onclick = function () {
-        slide.style.transform = "translateX(-4800px)";
-    }
-    nav[5].onclick = function () {
-        slide.style.transform = "translateX(-6000px)";
-    }
+
 
 //FOOTER
 
